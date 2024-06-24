@@ -12,7 +12,7 @@ import { ShoppingCart } from "@mui/icons-material";
 
 export function Navbar() {
   return (
-    <AppBar component="nav" color="inherit" position="sticky">
+    <AppBar component="nav" color="inherit" position="sticky" >
       <Container maxWidth="lg">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

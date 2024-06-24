@@ -7,7 +7,7 @@ export default async function Home() {
   await new Promise((res) => setTimeout(res, 1000));
 
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 3 }}>
+    <Box component="main" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 3 }}>
       {media.map((media) => (
         <CardItem key={media.id} mediaCard={media} />
       ))}

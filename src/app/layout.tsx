@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { Navbar } from "@/components";
 import { Container } from "@mui/material";
+import { Footer } from "@/components/ui/Footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Container maxWidth="lg" sx={{ mt: 5, mb: 5 }}>
             {children}
           </Container>
+          <Footer />
         </AppRouterCacheProvider>
       </body>
     </html>
