@@ -13,14 +13,7 @@ export default function Loading() {
         justifyContent: { xs: "center", md: "flex-start" },
       }}
     >
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
-      <SkeletonVideo width={260} height={220} />
+      <SkeletonVideo width={360} height={200} count={9} />
     </Box>
   );
 }

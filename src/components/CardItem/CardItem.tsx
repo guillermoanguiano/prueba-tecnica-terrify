@@ -49,7 +49,7 @@ export const CardItem = ({ mediaCard }: CardItemProps) => {
             </S.ImageWrapper>
           </CardMedia>
         </CardActionArea>
-        <CardActions sx={{ display: "flex", justifyContent: "center" }}>
+        {/* <CardActions sx={{ display: "flex", justifyContent: "center" }}>
           <S.WatchButton
             size="small"
             color="inherit"
@@ -58,7 +58,7 @@ export const CardItem = ({ mediaCard }: CardItemProps) => {
           >
             Watch
           </S.WatchButton>
-        </CardActions>
+        </CardActions> */}
       </S.CustomCard>
 
       <ModalVideo

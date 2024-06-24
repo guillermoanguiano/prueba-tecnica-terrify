@@ -14,7 +14,7 @@ export const api = async (request: Request) => {
         const data = request.data ?? {};
         const filters = request.filters ? request.filters : '';
         const endpoint = request.endpoint || '';
-        const url = 'https://terrific-live.free.beeceptor.com' + endpoint + filters;
+        const url = process.env.API_URL + endpoint + filters;
         const headers = {
             'Content-Type': 'application/json',
             ...request.headers,

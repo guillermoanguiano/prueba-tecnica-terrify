@@ -4,17 +4,21 @@ import React from "react";
 type SkeletonVideoProps = {
   width?: number;
   height?: number;
+  count?: number;
 };
 
 export const SkeletonVideo = ({
   width = 210,
   height = 120,
+  count = 1,
 }: SkeletonVideoProps) => {
   return (
-    <Box>
-      <Skeleton variant="rectangular" width={width} height={height} />
-      <Skeleton />
-      <Skeleton width="60%" />
-    </Box>
+    <>
+      {Array.from({ length: count }).map((_, index) => (
+        <Box key={index}>
+          <Skeleton variant="rounded" width={width} height={height} />
+        </Box>
+      ))}
+    </>
   );
 };
