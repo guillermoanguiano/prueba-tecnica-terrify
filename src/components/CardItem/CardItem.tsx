@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { CardActionArea, CardActions, CardMedia } from "@mui/material";
+import { Box, CardActionArea, CardActions, CardMedia } from "@mui/material";
 import Image from "next/image";
 
 // Components
@@ -28,7 +28,7 @@ export const CardItem = ({ mediaCard }: CardItemProps) => {
   };
 
   return (
-    <>
+    <Box>
       <S.CustomCard sx={{ mx: { xs: "auto", lg: 0 } }}>
         <CardActionArea
           onClick={handleClickOpen}
@@ -41,24 +41,16 @@ export const CardItem = ({ mediaCard }: CardItemProps) => {
                 src={mediaCard.image}
                 alt="Media Image"
                 fill
-                quality={100}
+                quality={80}
                 style={{ objectFit: "cover" }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
               />
             </S.ImageWrapper>
           </CardMedia>
         </CardActionArea>
-        {/* <CardActions sx={{ display: "flex", justifyContent: "center" }}>
-          <S.WatchButton
-            size="small"
-            color="inherit"
-            variant="outlined"
-            onClick={handleClickOpen}
-          >
-            Watch
-          </S.WatchButton>
-        </CardActions> */}
       </S.CustomCard>
 
       <ModalVideo
@@ -66,6 +58,6 @@ export const CardItem = ({ mediaCard }: CardItemProps) => {
         url={mediaCard.video}
         handleClose={handleClose}
       />
-    </>
+    </Box>
   );
 };

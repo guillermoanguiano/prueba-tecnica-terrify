@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-import { Navbar } from "@/components";
+
+// Components
+import { Footer, Navbar } from "@/components";
 import { Container } from "@mui/material";
-import { Footer } from "@/components/ui/Footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 

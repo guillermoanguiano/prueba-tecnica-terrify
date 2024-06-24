@@ -40,7 +40,7 @@ export const ModalVideo = ({
           width: "100%",
           height: "400px",
         }}
-        getInstance={(art) => console.info(art)}
+        getInstance={() => {}}
       />
     </Dialog>
   );
