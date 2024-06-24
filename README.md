@@ -15,8 +15,8 @@ Before you begin, ensure you have installed:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/guillermoanguiano/prueba-tecnica-terrify.git
+    cd prueba-tecnica-terrify
     ```
 
 2. Install dependencies:
@@ -35,7 +35,7 @@ Before you begin, ensure you have installed:
 
 ## Environment Variables Setup
 
-Create a `.env.local` file in the root of the project and add the following line, replacing `https://api.example.com` with your API URL:
+Create a `.env.local` file in the root of the project and add the following line, replacing `https://terrific-live.free.beeceptor.com` with your API URL:
 
 ```env
 API_URL=https://api.example.com
