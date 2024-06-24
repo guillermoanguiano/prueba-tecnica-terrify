@@ -1,4 +1,4 @@
-# Next.js App Router Project
+# Next.js App Router Technical Challenge 
 
 This project is a Next.js application using the App Router. The only required environment variable is `API_URL`.
 
